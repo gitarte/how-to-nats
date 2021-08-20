@@ -3,7 +3,10 @@ curl -L https://github.com/nats-io/nats-server/releases/download/v2.0.0/nats-ser
 ```
 
 ```bash
-docker run -p 4222:4222 -ti nats:latest
+docker run -p 4222:4222 --rm -ti nats:latest
+docker run -p 4222:4222 --rm -ti nats:latest -js
+
+docker run --rm -ti synadia/nats-box
 ```
 
 ```bash
